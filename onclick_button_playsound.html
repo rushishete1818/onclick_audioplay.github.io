@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color:chocolate;
+            display: grid;
+            place-items: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 450px;
+            height: 500px;
+            background-color: white;
+            padding: 0px 20px;
+            gap: 60px;
+            margin-top: 100px;
+            border-radius: 15px;
+            align-items: center;
+
+        }
+
+        .container input{
+            padding: 12px 6px;
+            border-radius: 5px;
+            border: none;
+            box-shadow: 0 0 6px grey;
+            outline:blueviolet;
+            width: 90%;
+        }
+
+        .container button{
+            padding-block:8px;
+            width: 60%;
+            background-color: red;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="email">
+        <button>Click me !</button>
+    </div>
+
+    <script>
+        const audio = new Audio("tatya_soda_tatya_tumcha_lay_motha_aahe___new_viral_tatya_ringtone(256kbps).mp3");
+        const buttons = document.querySelectorAll("button");
+
+
+        buttons.forEach(button => {
+            button.addEventListener("click" , () => {
+                audio.play();
+            });
+        });
+    </script>
+</body>
+</html>
